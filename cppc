@@ -1,0 +1,27 @@
+#!/bin/bash
+echo 'Enter file name then press [ENTER]'
+read filename
+#Creating cpp and h file
+touch $filename'.h'
+touch $filename'.cpp'
+#Writing cpp file
+echo '
+#include <iostream>
+#include "'$filename'.h"
+using namespace std;
+
+class '$filename'
+{
+//Add stuff here
+};
+int main() {
+//main function here
+}
+' >> $filename.'cpp'
+#Writing h file
+echo '
+#ifndef '$filename'_H
+#define '$filename'_H
+int main();
+
+#endif' >> $filename'.h'

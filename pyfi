@@ -1,0 +1,13 @@
+#!/bin/bash
+echo 'Enter file name then press [ENTER]:'
+read filename
+touch $filename'.py'
+echo 'class '$filename':
+    def __init__(self):
+
+' >> $filename'.py'
+echo 'def main():
+    pass
+
+if __name__ == "\""__main__"\"":
+    main()' >> $filename'.py'

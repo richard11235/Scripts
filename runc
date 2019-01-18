@@ -1,0 +1,10 @@
+#!/bin/bash
+if [ ! -d "tmp" ];
+then
+mkdir tmp
+fi
+g++ $1'.cpp' -o 'tmp/test.out'
+cd tmp
+./test.out
+rm test.out
+cd ..
