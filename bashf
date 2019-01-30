@@ -1,0 +1,6 @@
+#!/bin/bash
+echo 'Enter file name then press [ENTER]'
+read filename
+touch $HOME/bin/$filename
+echo '#!/bin/bash' >> $HOME/bin/$filename
+chmod +x $HOME/bin/$filename

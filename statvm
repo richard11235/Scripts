@@ -1,0 +1,7 @@
+#!/bin/bash
+vpn
+filename="$HOME/bin/.resources/vm"
+machine=$(head -n 1 $filename)
+echo $machine
+ssh $machine
+vpn d
