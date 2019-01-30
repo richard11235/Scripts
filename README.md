@@ -10,3 +10,5 @@ vpn:
 	Vpns using Cisco AnyConnect for use of VMs and general VPN use
 statvm:
 	Logs into VM for Stat class
+bashf:
+	Creates bash files and allows for use in terminal with correct path variables
