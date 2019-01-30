@@ -6,3 +6,7 @@ pyfi:
 	Promts user for class name and makes py file with class and main function
 runc:
 	Takes single argument and compiles and runs cpp program in terminal then deletes compiled file.
+vpn:
+	Vpns using Cisco AnyConnect for use of VMs and general VPN use
+statvm:
+	Logs into VM for Stat class
