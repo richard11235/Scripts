@@ -1,4 +1,16 @@
 #!/bin/bash
+networkfile="$HOME/bin/.resources/network"
+network=$(head -n 1 $networkfile)
+ssid=$(iwgetid -r)
+if [ "$ssid" = "$network" ];
+then
+	echo "Already in-network"
+	filename="$HOME/bin/.resources/vm"
+	machine=$(head -n 1 $filename)
+	echo $machine
+	ssh $machine
+	exit
+fi
 vpn
 filename="$HOME/bin/.resources/vm"
 machine=$(head -n 1 $filename)
